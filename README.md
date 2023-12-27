@@ -1,7 +1,7 @@
 # Flask REST API First Project 💻
 
 This project was designed to test my knowledge in these libraries and frameworks.</a>
-Doing a CRUD in a network of stores, with different items, that can be included, updated or deleted.</a>
+Doing a CRUD in a network of stores, with different items, that can be included, updated or deleted, also with tags, that are related with the stores </a>
 
 ## What was used ⌨️
 
@@ -19,22 +19,35 @@ Doing a CRUD in a network of stores, with different items, that can be included,
 - The first request may take a while (approximately 20 seconds), since the docker image is hosted in a free plan in render.com
 - The key words to be passed are in the /models/item and /model/store
 
+ ### Endpoints for User
+
+ * POST= (url)/register - To create a new User - Key Words: username, password;
+ * POST= (url)/login - To login and generate access tokens and refresh tokens - Key Words: username, password;
+ * POST= (url)/logout - To put a user in the block list, and revoke the tokens - - Key Words: username, password;
+ * POST= (url)/refresh - To get a non-fresh token;
+ * GET= (url)/user/(id) - To get informations of a user;
+ * DELETE= (url)/user/(id) - To delete a user;
+
+### Endpoints for Tags
+The ID in (url)/store are the IDs of a store created previously.
+
+ * POST= (url)/store/(id)/tag - To create a tag and connect it to a store - Key Words: name,
+ * GET= (url)/tags/(id) - To get informations of a specific tag;
+ * GET= (url)/store/(id)/tag - To get all tags related with a store;
+ * DELETE= (url)/(id) - To delete a specific tag.
+
+
  ### Endpoints for Stores
 
- * POST= (url)/store - To create a new store - Key Word: name;
  * GET= (url)/store - For all store data;
  * GET= (url)/store/(id) - For receive a specific store data;
+ * POST= (url)/store - To create a new store - Key Word: name;
  * DELETE= (url)/store/(id) - For delete a specifc store;
 
  ### Endpoints for Items
 
- * POST= (url)/item - To create a new item - Key Word: name, price, store_id;
  * GET= (url)/item - For all item data;
  * GET= (url)/item/(id) - For receive a specific item data;
+ * POST= (url)/item - To create a new item - Key Word: name, price, store_id;
  * DELETE= (url)/store/(id) - For delete a specifc item;
  * PUT= (url)/item/(id) - To update a specific item, or create a new item if it was not found - Key Word: name, price, store_id;
-
-## Work in Progress 🏗️
-
- This Rest API is in development, i want to add a differente type of database in the future such as PostgreSQL,also making a improvemente in the database relationships.
- Also, develop a user authentification for the endpoints.
