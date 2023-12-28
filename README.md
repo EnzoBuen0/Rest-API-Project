@@ -1,7 +1,8 @@
 # Flask REST API First Project 💻
 
-This project was designed to test my knowledge in these libraries and frameworks.</a>
-Doing a CRUD in a network of stores, with different items, that can be included, updated or deleted, also with tags, that are related with the stores </a>
+This project was designed to test my knowledge in these libraries and frameworks.
+Doing a CRUD in a network of stores, with different items, that can be included, updated or deleted, also with tags, that are related with the stores.
+Also using JWT to user athentification, for more secure requests
 
 ## What was used ⌨️
 
