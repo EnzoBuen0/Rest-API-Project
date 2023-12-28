@@ -17,7 +17,6 @@ Doing a CRUD in a network of stores, with different items, that can be included,
 - Replace the (url), with the url provided to test it properly.
 - Replace the (id) with the generated id from previous requests.
 - The first request may take a while (approximately 20 seconds), since the docker image is hosted in a free plan in render.com
-- The key words to be passed are in the /models/item and /model/store
 
  ### Endpoints for User
 
