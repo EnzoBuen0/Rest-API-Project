@@ -13,7 +13,7 @@ Doing a CRUD in a network of stores, with different items, that can be included,
 ## How to Test It 🖥️
 
 - You will need a tool like Insomnia, to send requests to the API.
-- The URL to send the requests is : (https://rest-apis-flask-python-project-x5j4.onrender.com)
+- The URL to send the requests is : (https://rest-api-flask-python-project-21bq.onrender.com)
 - Replace the (url), with the url provided to test it properly.
 - Replace the (id) with the generated id from previous requests.
 - The first request may take a while (approximately 20 seconds), since the docker image is hosted in a free plan in render.com
